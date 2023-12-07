@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Testera Gier Typu Horror</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+        }
+
+        .title-frame {
+            border-bottom: 2px solid #ffa500;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .orange-frame {
+            border: 2px solid #ffa500;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff8e1;
+        }
+
+        .yellow-frame {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ffa500;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="title-frame">
+        <h1>Formularz Testera Gier Typu Horror</h1>
+    </div>
+
+    <div class="orange-frame">
+        <form action="/przetwarzanie-danych" method="post">
+            <div class="yellow-frame">
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie" name="imie" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="kontakt">Kontakt:</label>
+                <textarea id="kontakt" name="kontakt" rows="4" required></textarea>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="preferowaneGry">W jakie rodzaje gier grasz najczęściej?</label>
+                <textarea id="preferowaneGry" name="preferowaneGry" rows="4" required></textarea>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="czyHorror">Czy lubisz gry typu horror?</label>
+                <select id="czyHorror" name="czyHorror" required>
+                    <option value="tak">Tak</option>
+                    <option value="nie">Nie</option>
+                </select>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="choroby">Czy chorujesz na epilepsję lub inne tego typu choroby?</label>
+                <select id="choroby" name="choroby" required>
+                    <option value="tak">Tak</option>
+                    <option value="nie">Nie</option>
+                </select>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="denerwowanie">Czy denerwujesz się w trakcie grania?</label>
+                <select id="denerwowanie" name="denerwowanie" required>
+                    <option value="tak">Tak</option>
+                    <option value="nie">Nie</option>
+                </select>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="platforma">Grasz na konsoli czy komputerze?</label>
+                <select id="platforma" name="platforma" required>
+                    <option value="konsola">Konsola</option>
+                    <option value="pc">Pc</option>
+                </select>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="ostatniHorror">W jaki horror grałeś w ostatnim czasie?</label>
+                <textarea id="ostatniHorror" name="ostatniHorror" rows="4" required></textarea>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="imieSprawdzajacego">Imię sprawdzającego:</label>
+                <input type="text" id="imieSprawdzajacego" name="imieSprawdzajacego" required>
+            </div>
+
+            <div class="yellow-frame">
+                <label for="imieKlienta">Imię klienta:</label>
+                <input type="text" id="imieKlienta" name="imieKlienta" required>
+            </div>
+
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
